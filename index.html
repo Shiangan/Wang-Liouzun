@@ -1,1 +1,3487 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0,
+                   maximum-scale=5.0,
+                   user-scalable=yes,
+                   viewport-fit=cover">
+
+    <meta name="theme-color" content="#e8e2d6">
+
+    <meta property="og:title"
+          content="【追思】王廖春夫人 雲端訃告">
+
+    <meta property="og:description"
+          content="敬邀親友們，陪伴王廖春夫人走完人生最後一程。">
+
+    <meta property="og:image"
+          content="image/Write.png">
+
+    <meta property="og:type"
+          content="website">
+
+    <link rel="icon"
+          href="image/logo.ico"
+          type="image/png">
+
+    <title>永恆思念：王廖春夫人</title>
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&display=swap"
+          rel="stylesheet">
+
+
+<style>
+
+/* =========================================================
+   基礎變數
+========================================================= */
+
+:root {
+
+    --bg-deep: #e8e2d6;
+
+    --paper: #f2ede4;
+
+    --card-inner: rgba(232,226,214,0.6);
+
+    --ink: #2a2a2a;
+
+    --gold-dark: #8e735b;
+
+    --gold-light: #b4977a;
+
+    --sub-ink: #666666;
+
+    --border:
+        rgba(142,115,91,0.15);
+
+    --max-w: 480px;
+
+}
+
+
+/* =========================================================
+   全域
+========================================================= */
+
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+    width: 100%;
+
+    overflow-x: hidden;
+
+}
+
+
+body {
+
+    width: 100%;
+
+    min-width: 0;
+
+    overflow-x: hidden;
+
+    background: var(--bg-deep);
+
+    color: var(--ink);
+
+    font-family:
+        'Iansui',
+        'Noto Serif TC',
+        serif;
+
+    line-height: 1.8;
+
+    -webkit-font-smoothing: antialiased;
+
+    word-break: normal;
+
+    overflow-wrap: anywhere;
+
+    -webkit-user-select: none;
+
+    user-select: none;
+
+}
+
+
+/* 自製字型 */
+
+@font-face {
+
+    font-family: 'ZF-Font';
+
+    src:
+        url('Zf-Font.ttf')
+        format('truetype');
+
+    font-display: swap;
+
+}
+
+
+@font-face {
+
+    font-family: 'Iansui';
+
+    src:
+        url('Iansui-Regular.ttf')
+        format('truetype');
+
+    font-display: swap;
+
+}
+
+
+/* =========================================================
+   重要：不允許任何元素超出頁面
+========================================================= */
+
+img,
+video,
+iframe {
+
+    max-width: 100%;
+
+}
+
+
+button,
+a {
+
+    max-width: 100%;
+
+}
+
+
+p,
+div,
+span {
+
+    max-width: 100%;
+
+}
+
+
+/* =========================================================
+   App
+========================================================= */
+
+.app-wrapper {
+
+    width: 100%;
+
+    max-width: var(--max-w);
+
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--paper);
+
+    box-shadow:
+        0 0 60px
+        rgba(0,0,0,0.08);
+
+}
+
+
+/* =========================================================
+   背景浮水印
+========================================================= */
+
+.bg-watermark {
+
+    position: fixed;
+
+    bottom: 12%;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    font-size: 85px;
+
+    font-weight: 300;
+
+    color:
+        rgba(142,115,91,0.04);
+
+    letter-spacing: 20px;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   頂部
+========================================================= */
+
+.header-top {
+
+    width: 100%;
+
+    text-align: center;
+
+    padding:
+        45px 20px 10px;
+
+    position: relative;
+
+    z-index: 10;
+
+}
+
+
+.top-logo {
+
+    width: 100px;
+
+    max-width: 100%;
+
+    opacity: 0.8;
+
+    margin:
+        0 auto 20px;
+
+    display: block;
+
+}
+
+
+.top-action-bar {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.top-btn {
+
+    min-width: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding:
+        9px 15px;
+
+    border-radius: 30px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    border:
+        1px solid
+        rgba(142,115,91,0.3);
+
+    background:
+        rgba(232,226,214,0.5);
+
+    color: var(--sub-ink);
+
+}
+
+
+.top-btn img {
+
+    width: 15px;
+
+    height: 15px;
+
+    flex-shrink: 0;
+
+    opacity: 0.6;
+
+}
+
+
+/* =========================================================
+   主標題
+========================================================= */
+
+header {
+
+    width: 100%;
+
+    text-align: center;
+
+    padding:
+        30px 20px 50px;
+
+}
+
+
+.name-wrapper {
+
+    width: 100%;
+
+    font-size:
+        clamp(36px,10vw,48px);
+
+    font-weight: 900;
+
+    letter-spacing:
+        0.18em;
+
+    margin:
+        35px auto 10px;
+
+    color: var(--ink);
+
+    white-space: normal;
+
+}
+
+
+.life-range {
+
+    width: 100%;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    color: var(--gold-dark);
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   Section
+========================================================= */
+
+section {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    padding:
+        65px 24px;
+
+    position: relative;
+
+    z-index: 1;
+
+    opacity: 0;
+
+    transform:
+        translateY(30px);
+
+    transition:
+        opacity 1.2s
+        cubic-bezier(.16,1,.3,1),
+
+        transform 1.2s
+        cubic-bezier(.16,1,.3,1);
+
+}
+
+
+section.visible {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+.section-title {
+
+    width: 100%;
+
+    font-size: 20px;
+
+    letter-spacing: 7px;
+
+    color: var(--gold-dark);
+
+    font-weight: 700;
+
+    margin-bottom: 40px;
+
+    display: block;
+
+    text-align: center;
+
+}
+
+
+.section-title::after {
+
+    content: "";
+
+    display: block;
+
+    width: 30px;
+
+    height: 1.5px;
+
+    background:
+        var(--gold-light);
+
+    margin:
+        15px auto 0;
+
+    opacity: .5;
+
+}
+
+
+/* =========================================================
+   一般圖片
+========================================================= */
+
+.img-inner {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    margin:
+        0 auto 30px;
+
+    border-radius: 2px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.1);
+
+    cursor: zoom-in;
+
+}
+
+
+/* =========================================================
+   訃告
+========================================================= */
+
+.obituary-wrap {
+
+    width: 100%;
+
+    padding: 8px;
+
+    background:
+        var(--bg-deep);
+
+    border-radius: 2px;
+
+    box-shadow:
+        inset 0 0 15px
+        rgba(0,0,0,.05);
+
+}
+
+
+.obituary-img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    cursor: zoom-in;
+
+}
+
+
+.zoom-hint {
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: var(--sub-ink);
+
+    margin-top: 20px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================================
+   儀程日期
+========================================================= */
+
+.date-hero {
+
+    width: 100%;
+
+    font-size:
+        clamp(55px,17vw,78px);
+
+    font-weight: 900;
+
+    line-height: 1;
+
+    text-align: center;
+
+    letter-spacing: -3px;
+
+    color: var(--ink);
+
+}
+
+
+.date-sub {
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    color: var(--sub-ink);
+
+    margin-top: 18px;
+
+}
+
+
+/* =========================================================
+   【最重要】告別式時間資訊
+========================================================= */
+
+.time-timeline {
+
+    width: 100%;
+
+    max-width: 390px;
+
+    margin:
+        50px auto 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+
+/*
+   每一列固定為：
+   左邊標籤
+   中間分隔線
+   右邊內容
+
+   不使用 nowrap
+   不會把地點裁掉
+*/
+
+.time-row {
+
+    width: 100%;
+
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(82px, 0.85fr)
+        minmax(0, 1.7fr);
+
+    column-gap: 16px;
+
+    align-items: center;
+
+}
+
+
+/* 左側 */
+
+.time-tag {
+
+    min-width: 0;
+
+    color:
+        var(--gold-dark);
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    line-height: 1.45;
+
+    text-align: right;
+
+    overflow-wrap: anywhere;
+
+    word-break: normal;
+
+}
+
+
+/* 右側 */
+
+.time-main {
+
+    min-width: 0;
+
+    width: 100%;
+
+    color: var(--ink);
+
+    border-left:
+        2px solid
+        var(--gold-light);
+
+    padding:
+        7px 0 7px 16px;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    line-height: 1.45;
+
+    display: block;
+
+    overflow-wrap: anywhere;
+
+    word-break: normal;
+
+}
+
+
+/*
+   地點專用
+   讓三峽昇華園［明禮廳］完整顯示
+*/
+
+.time-main.location {
+
+    font-size:
+        clamp(17px,4.5vw,21px);
+
+    font-weight: 800;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================================
+   出殯會場資訊卡
+========================================================= */
+
+.info-card {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    min-width: 0;
+
+    border-radius: 8px;
+
+    padding:
+        30px 20px;
+
+    margin-top: 20px;
+
+    background:
+        var(--card-inner);
+
+    border:
+        1px solid var(--border);
+
+    text-align: center;
+
+}
+
+
+.info-label {
+
+    display: block;
+
+    width: 100%;
+
+    font-size: 19px;
+
+    color:
+        var(--gold-dark);
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.info-value {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    font-size:
+        clamp(18px,5vw,22px);
+
+    font-weight: 700;
+
+    color: var(--ink);
+
+    line-height: 1.6;
+
+    overflow-wrap: anywhere;
+
+    word-break: normal;
+
+}
+
+
+.info-sub {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    font-size: 14px;
+
+    color: var(--sub-ink);
+
+    margin-top: 8px;
+
+    line-height: 1.7;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+/* =========================================================
+   注意事項
+========================================================= */
+
+.notice-card {
+
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding:
+        22px 18px;
+
+    background:
+        rgba(180,151,122,.05);
+
+    border:
+        1px solid
+        rgba(180,151,122,.15);
+
+    border-radius: 8px;
+
+}
+
+
+.notice-item {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 7px;
+
+    margin-bottom: 12px;
+
+    color: var(--sub-ink);
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    text-align: justify;
+
+}
+
+
+.notice-item:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.notice-item::before {
+
+    content: "‧";
+
+    flex: 0 0 auto;
+
+    color:
+        var(--gold-light);
+
+    font-weight: 900;
+
+}
+
+
+/* =========================================================
+   通用按鈕
+========================================================= */
+
+.btn-action {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    display: block;
+
+    padding: 18px 12px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+
+    border-radius: 2px;
+
+    cursor: pointer;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+.btn-outline {
+
+    border:
+        1px solid
+        var(--gold-dark);
+
+    color:
+        var(--gold-dark);
+
+    background:
+        transparent;
+
+    margin-top: 20px;
+
+}
+
+
+.btn-solid {
+
+    width: 100%;
+
+    border: none;
+
+    background:
+        var(--gold-dark);
+
+    color:
+        var(--paper);
+
+    margin-top: 15px;
+
+}
+
+
+/* =========================================================
+   Drawer
+========================================================= */
+
+.tool-drawer {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    min-width: 0;
+
+    margin-bottom: 15px;
+
+    border-radius: 4px;
+
+    overflow: hidden;
+
+    background:
+        rgba(232,226,214,.4);
+
+    border:
+        1px solid
+        rgba(142,115,91,.1);
+
+}
+
+
+.drawer-btn {
+
+    width: 100%;
+
+    min-width: 0;
+
+    padding:
+        20px;
+
+    background: none;
+
+    border: none;
+
+    text-align: left;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: var(--ink);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+    cursor: pointer;
+
+}
+
+
+.drawer-btn .toggle-icon {
+
+    flex: 0 0 auto;
+
+    font-size: 20px;
+
+    color:
+        var(--gold-dark);
+
+}
+
+
+.drawer-content {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    min-width: 0;
+
+    display: none;
+
+    padding:
+        22px;
+
+    background:
+        rgba(232,226,214,.2);
+
+    border-top:
+        1px solid
+        rgba(142,115,91,.1);
+
+}
+
+
+.drawer-content.open {
+
+    display: block;
+
+}
+
+
+/* =========================================================
+   花籃
+========================================================= */
+
+.img-grid {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap: 15px;
+
+}
+
+
+.grid-item {
+
+    min-width: 0;
+
+    text-align: center;
+
+    cursor: zoom-in;
+
+}
+
+
+.grid-item img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 1px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,.08);
+
+}
+
+
+.grid-item p {
+
+    font-size: 13px;
+
+    margin-top: 8px;
+
+    font-weight: 600;
+
+}
+
+
+.grid-item span {
+
+    display: block;
+
+    font-size: 12px;
+
+    color:
+        var(--sub-ink);
+
+}
+
+
+/* =========================================================
+   聯絡區
+========================================================= */
+
+.contact-box {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    min-width: 0;
+
+    background:
+        rgba(142,115,91,.05);
+
+    padding:
+        32px 20px;
+
+    border-radius: 4px;
+
+    border:
+        1px solid
+        rgba(142,115,91,.1);
+
+    text-align: center;
+
+}
+
+
+.contact-btns {
+
+    width: 100%;
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+}
+
+
+.c-btn {
+
+    min-width: 0;
+
+    flex: 1;
+
+    padding: 15px 8px;
+
+    border-radius: 2px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #fff;
+
+    text-align: center;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================================
+   【新版】會場交通資訊
+   只保留兩張圖片
+========================================================= */
+
+.transport-title {
+
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.transport-images {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+
+.transport-image {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 4px;
+
+    cursor: zoom-in;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,.10);
+
+}
+
+
+/* =========================================================
+   書法
+========================================================= */
+
+.calligraphy-area {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    padding:
+        120px 10px;
+
+    background:
+        var(--bg-deep);
+
+    opacity: 0;
+
+    transform:
+        translateY(30px);
+
+    transition:
+        opacity 1.2s
+        cubic-bezier(.16,1,.3,1),
+
+        transform 1.2s
+        cubic-bezier(.16,1,.3,1);
+
+}
+
+
+.calligraphy-area.visible {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+.ink-wrap {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    height: 620px;
+
+    overflow: hidden;
+
+}
+
+
+.ink-line {
+
+    writing-mode:
+        vertical-rl;
+
+    font-family:
+        'ZF-Font',
+        serif;
+
+    font-size: 23px;
+
+    letter-spacing: 8px;
+
+    color:
+        var(--sub-ink);
+
+    white-space: nowrap;
+
+}
+
+
+.ink-char {
+
+    opacity: 0;
+
+    display: inline-block;
+
+    transition:
+        opacity .5s ease;
+
+}
+
+
+.ink-char.show {
+
+    opacity: 1;
+
+}
+
+
+/* =========================================================
+   Footer
+========================================================= */
+
+footer {
+
+    width: 100%;
+
+    padding:
+        70px 20px 150px;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: 8px;
+
+    color:
+        var(--gold-dark);
+
+    opacity: .5;
+
+}
+
+
+/* =========================================================
+   浮動導航
+========================================================= */
+
+.float-nav {
+
+    position: fixed;
+
+    right:
+        max(12px, env(safe-area-inset-right));
+
+    bottom:
+        max(25px, env(safe-area-inset-bottom));
+
+    z-index: 999;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+.float-nav a {
+
+    display: block;
+
+}
+
+
+.float-nav img {
+
+    width: 58px;
+
+    height: auto;
+
+    display: block;
+
+    filter:
+        drop-shadow(
+            0 10px 18px
+            rgba(0,0,0,.18)
+        );
+
+}
+
+
+/* =========================================================
+   Lightbox
+========================================================= */
+
+#lightbox {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100vw;
+
+    height: 100vh;
+
+    background:
+        rgba(26,26,26,.98);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 10000;
+
+    padding: 20px;
+
+}
+
+
+#lightbox.active {
+
+    display: flex;
+
+}
+
+
+#lightbox img {
+
+    max-width: 100%;
+
+    max-height: 92vh;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 2px;
+
+}
+
+
+#lightbox .lb-close {
+
+    position: absolute;
+
+    top:
+        max(18px, env(safe-area-inset-top));
+
+    right: 20px;
+
+    color:
+        rgba(255,255,255,.7);
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    line-height: 1;
+
+    z-index: 2;
+
+}
+
+
+/* =========================================================
+   Toast
+========================================================= */
+
+#toast {
+
+    position: fixed;
+
+    left: 50%;
+
+    bottom: 110px;
+
+    transform:
+        translateX(-50%)
+        translateY(20px);
+
+    max-width:
+        calc(100vw - 40px);
+
+    background:
+        rgba(42,42,42,.92);
+
+    color: #fff;
+
+    padding:
+        11px 20px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    z-index: 9999;
+
+    pointer-events: none;
+
+    opacity: 0;
+
+    transition:
+        opacity .4s,
+        transform .4s;
+
+    white-space: normal;
+
+    text-align: center;
+
+}
+
+
+#toast.show {
+
+    opacity: 1;
+
+    transform:
+        translateX(-50%)
+        translateY(0);
+
+}
+
+
+/* =========================================================
+   小手機
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .header-top {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+
+    }
+
+
+    section {
+
+        padding-left: 18px;
+
+        padding-right: 18px;
+
+    }
+
+
+    .top-action-bar {
+
+        gap: 7px;
+
+    }
+
+
+    .top-btn {
+
+        padding:
+            8px 11px;
+
+        font-size: 12px;
+
+    }
+
+
+    .section-title {
+
+        font-size: 18px;
+
+        letter-spacing: 5px;
+
+    }
+
+
+    .time-timeline {
+
+        max-width: 100%;
+
+        gap: 15px;
+
+    }
+
+
+    .time-row {
+
+        grid-template-columns:
+            minmax(70px,.75fr)
+            minmax(0,1.65fr);
+
+        column-gap: 10px;
+
+    }
+
+
+    .time-tag {
+
+        font-size: 14px;
+
+        letter-spacing: 0;
+
+    }
+
+
+    .time-main {
+
+        padding-left: 12px;
+
+        font-size: 20px;
+
+    }
+
+
+    .time-main.location {
+
+        font-size: 16px;
+
+    }
+
+
+    .info-card {
+
+        padding:
+            26px 15px;
+
+    }
+
+
+    .info-value {
+
+        font-size: 18px;
+
+    }
+
+
+    .drawer-content {
+
+        padding: 15px;
+
+    }
+
+
+    .img-grid {
+
+        gap: 10px;
+
+    }
+
+
+    .contact-btns {
+
+        gap: 8px;
+
+    }
+
+
+    .c-btn {
+
+        font-size: 12px;
+
+    }
+
+
+    .ink-wrap {
+
+        gap: 8px;
+
+    }
+
+
+    .ink-line {
+
+        font-size: 19px;
+
+        letter-spacing: 5px;
+
+    }
+
+
+    .float-nav img {
+
+        width: 52px;
+
+    }
+
+}
+
+
+/* =========================================================
+   超小手機
+========================================================= */
+
+@media (max-width: 330px) {
+
+    .time-row {
+
+        grid-template-columns:
+            64px
+            minmax(0,1fr);
+
+        column-gap: 8px;
+
+    }
+
+
+    .time-tag {
+
+        font-size: 13px;
+
+    }
+
+
+    .time-main {
+
+        padding-left: 10px;
+
+        font-size: 18px;
+
+    }
+
+
+    .time-main.location {
+
+        font-size: 15px;
+
+    }
+
+
+    .name-wrapper {
+
+        font-size: 34px;
+
+        letter-spacing: .12em;
+
+    }
+
+}
+
+
+/* =========================================================
+   防止桌面內容放大
+========================================================= */
+
+@media (min-width: 481px) {
+
+    body {
+
+        background:
+            var(--bg-deep);
+
+    }
+
+}
+
+
+/* =========================================================
+   減少動畫
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior: auto;
+
+    }
+
+    section,
+    .calligraphy-area {
+
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body oncontextmenu="return false">
+
+
+<!-- ======================================================
+     背景音樂
+====================================================== -->
+
+<audio id="bgm"
+       loop
+       preload="none">
+
+    <source
+        src="Misson Part 1.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+<div id="toast"></div>
+
+
+<div class="app-wrapper">
+
+
+    <div class="bg-watermark"
+         aria-hidden="true">
+
+        MEMORY
+
+    </div>
+
+
+    <!-- ==================================================
+         頂部
+    ================================================== -->
+
+    <div class="header-top">
+
+        <img src="image/logo.ico"
+             class="top-logo"
+             alt="祥安生命 Logo">
+
+
+        <div class="top-action-bar">
+
+
+            <button class="top-btn"
+                    id="bgmBtn"
+                    onclick="toggleBGM()">
+
+                <img id="bgmIcon"
+                     src="https://img.icons8.com/material-outlined/24/777777/musical-notes.png"
+                     alt="">
+
+                音樂
+
+            </button>
+
+
+            <button class="top-btn"
+                    onclick="copyText()">
+
+                <img
+                    src="https://img.icons8.com/material-outlined/24/777777/copy.png"
+                    alt="">
+
+                複製資訊
+
+            </button>
+
+
+            <button class="top-btn"
+                    onclick="shareLine()">
+
+                <img
+                    src="https://img.icons8.com/material-rounded/24/8e735b/line-me.png"
+                    alt="">
+
+                分享親友
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         主標題
+    ================================================== -->
+
+    <header>
+
+        <div class="name-wrapper">
+
+            王廖春夫人
+
+        </div>
+
+
+        <div class="life-range">
+
+            1940-2026
+
+        </div>
+
+    </header>
+
+
+<main>
+
+
+<!-- ======================================================
+     第一節
+====================================================== -->
+
+<section class="reveal"
+         aria-label="告別式說明">
+
+
+    <img src="image/IMG_3471.jpeg"
+         class="img-inner"
+         onclick="openLightbox(this.src)"
+         alt="王廖春夫人遺照">
+
+
+    <div style="
+        text-align:center;
+        margin-top:50px;
+    ">
+
+
+        <p style="
+            font-size:18px;
+            font-weight:600;
+            letter-spacing:4px;
+            margin-bottom:25px;
+            color:var(--gold-dark);
+        ">
+
+            追思永存、母愛長留
+
+        </p>
+
+
+        <p style="
+            font-size:clamp(15px,4.2vw,17px);
+            color:var(--sub-ink);
+            line-height:2.8;
+            letter-spacing:1.5px;
+            padding:0 8px;
+        ">
+
+            我們摯愛的
+
+            <span style="
+                font-weight:700;
+                color:var(--ink);
+                font-size:1.1em;
+            ">
+
+                王廖春 夫人
+
+            </span>
+
+            <br>
+
+            於民國 115 年 09 月 13 日
+
+            <br>
+
+            在家人親友的陪伴與思念中，
+
+            <br>
+
+            安詳辭世，圓滿人生旅程。
+
+            <br><br>
+
+            謹擇於
+
+            <br>
+
+            <span style="
+                color:var(--ink);
+                font-weight:600;
+            ">
+
+                民國 115 年 09 月 25 日（五）
+
+            </span>
+
+            <br>
+
+            於
+
+            <span style="
+                color:var(--ink);
+                font-weight:600;
+            ">
+
+                三峽昇華園［明德廳］
+
+            </span>
+
+            <br>
+
+            舉辦告別追思奠禮
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     第二節：訃告
+====================================================== -->
+
+<section class="reveal"
+         aria-label="訃告正本">
+
+    <span class="section-title">
+
+        訃告正本公告
+
+    </span>
+
+
+    <div class="obituary-wrap">
+
+        <img src="image/IMG_3472.jpeg"
+             class="obituary-img"
+             onclick="openLightbox(this.src)"
+             alt="王廖春夫人訃告正本">
+
+    </div>
+
+
+    <p class="zoom-hint">
+
+        （ 點擊圖片可放大閱讀 ）
+
+    </p>
+
+</section>
+
+
+<!-- ======================================================
+     第三節：儀程
+====================================================== -->
+
+<section class="reveal"
+         aria-label="告別奠禮儀程">
+
+
+    <span class="section-title">
+
+        告別奠禮 ‧ 儀程
+
+    </span>
+
+
+    <div class="date-hero">
+
+        09.25
+
+    </div>
+
+
+    <div class="date-sub">
+
+        民國 115 年 ‧ 國曆九月廿五日（星期五）
+
+    </div>
+
+
+    <!-- ================================================
+         告別式資訊
+    ================================================= -->
+
+    <div class="time-timeline">
+
+
+        <!-- 出殯日期 -->
+
+        <div class="time-row">
+
+            <div class="time-tag">
+
+                出殯日期
+
+            </div>
+
+            <div class="time-main">
+
+                09.25
+
+            </div>
+
+        </div>
+
+
+        <!-- 告別式地點 -->
+
+        <div class="time-row">
+
+            <div class="time-tag">
+
+                告別式地點
+
+            </div>
+
+            <div class="time-main location">
+
+                三峽昇華園［明德廳］
+
+            </div>
+
+        </div>
+
+
+        <!-- 家奠禮 -->
+
+        <div class="time-row">
+
+            <div class="time-tag">
+
+                家奠禮
+
+            </div>
+
+            <div class="time-main">
+
+                上午07：40
+
+            </div>
+
+        </div>
+
+
+        <!-- 公奠禮 -->
+
+        <div class="time-row">
+
+            <div class="time-tag">
+
+                隨即
+
+            </div>
+
+            <div class="time-main">
+
+                自由拈香 發引火化
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ================================================
+         出殯會場
+    ================================================= -->
+
+    <div class="info-card">
+
+
+        <span class="info-label">
+
+            出殯會場
+
+        </span>
+
+
+        <div class="info-value">
+
+            三峽昇華園（三峽火化場）
+
+        </div>
+
+
+        <div class="info-value">
+
+            ［ 明德廳 ］
+
+        </div>
+
+
+        <div class="info-sub">
+
+            新北市三峽區溪北里介壽路三段260巷1號
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ================================================
+         牌位
+    ================================================= -->
+
+    <div class="info-card"
+         style="
+            margin-top:20px;
+            border-style:dashed;
+         ">
+
+
+        <span class="info-label">
+
+            牌位安置
+
+        </span>
+
+
+        <div class="info-value">
+
+            三峽昇華園（三峽火化場）
+
+        </div>
+
+
+        <div class="info-value">
+
+            牌位區
+
+        </div>
+
+
+        <div class="info-value">
+
+            No.31
+
+        </div>
+
+
+        <div class="info-sub">
+
+            新北市三峽區溪北里介壽路三段260巷1號
+
+        </div>
+
+
+        <div class="info-sub">
+
+            親友平日可前往上香弔唁
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ================================================
+         注意事項
+    ================================================= -->
+
+    <div class="notice-card">
+
+
+        <div class="notice-item">
+
+            請著整齊、樸素衣物出席，以表尊敬與追思之意。
+
+        </div>
+
+
+        <div class="notice-item">
+
+            殯儀館內請勿說「再見」，以「平安」代替即可。
+
+        </div>
+
+
+        <div class="notice-item">
+
+            奠禮會場備有淨水，若有需要可以自行取用。
+
+        </div>
+
+
+        <div class="notice-item">
+
+            若因宗教信仰不方便持香，與工作人員示意即可。
+
+        </div>
+
+
+        <!-- 導航 -->
+
+        <a href="https://www.google.com/maps/search/?api=1&query=新北市三峽區溪北里介壽路三段260巷1號"
+           target="_blank"
+           rel="noopener"
+           class="btn-action btn-outline">
+
+            📍 開啟地圖導航（三峽昇華園）
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- ======================================================
+     第四節：致意資訊
+====================================================== -->
+
+<section class="reveal"
+         aria-label="致意資訊導引">
+
+
+    <span class="section-title">
+
+        致意資訊導引
+
+    </span>
+
+
+    <!-- ==================================================
+         花禮
+    ================================================== -->
+
+    <div class="tool-drawer">
+
+
+        <button class="drawer-btn"
+                onclick="toggleDrawer(this,'flower')"
+                aria-expanded="false"
+                aria-controls="flower">
+
+            <span>
+
+                致意花禮樣式
+
+            </span>
+
+
+            <span class="toggle-icon">
+
+                +
+
+            </span>
+
+        </button>
+
+
+        <div id="flower"
+             class="drawer-content">
+
+
+            <div class="img-grid">
+
+
+                <div class="grid-item"
+                     onclick="openLightbox('image/花籃A款.JPG')">
+
+                    <img
+                        src="image/花籃A款.JPG"
+                        alt="花籃樣式A">
+
+                    <p>樣式 A</p>
+
+                    <span>
+                        NT$ 2,500 / 對
+                    </span>
+
+                </div>
+
+
+                <div class="grid-item"
+                     onclick="openLightbox('image/花籃B款.JPG')">
+
+                    <img
+                        src="image/花籃B款.JPG"
+                        alt="花籃樣式B">
+
+                    <p>樣式 B</p>
+
+                    <span>
+                        NT$ 3,000 / 對
+                    </span>
+
+                </div>
+
+
+                <div class="grid-item"
+                     onclick="openLightbox('image/花籃C款.JPG')">
+
+                    <img
+                        src="image/花籃C款.JPG"
+                        alt="花籃樣式C">
+
+                    <p>樣式 C</p>
+
+                    <span>
+                        NT$ 3,500 / 對
+                    </span>
+
+                </div>
+
+
+                <div class="grid-item"
+                     onclick="openLightbox('image/花籃D款.JPG')">
+
+                    <img
+                        src="image/花籃D款.JPG"
+                        alt="花籃樣式D">
+
+                    <p>樣式 D</p>
+
+                    <span>
+                        NT$ 4,500 / 對
+                    </span>
+
+                </div>
+
+
+                <div class="grid-item"
+                     onclick="openLightbox('image/花籃E款.JPG')">
+
+                    <img
+                        src="image/花籃E款.JPG"
+                        alt="花籃樣式E">
+
+                    <p>樣式 E</p>
+
+                    <span>
+                        NT$ 5,000 / 對
+                    </span>
+
+                </div>
+
+
+                <div class="grid-item"
+                     onclick="openLightbox('image/花籃F款.JPG')">
+
+                    <img
+                        src="image/花籃F款.JPG"
+                        alt="花籃樣式F">
+
+                    <p>樣式 F</p>
+
+                    <span>
+                        NT$ 5,500 / 對
+                    </span>
+
+                </div>
+
+
+                <div class="grid-item"
+                     onclick="openLightbox('image/花籃G款.JPG')">
+
+                    <img
+                        src="image/花籃G款.JPG"
+                        alt="花籃樣式G">
+
+                    <p>樣式 G</p>
+
+                    <span>
+                        NT$ 6,000 / 對
+                    </span>
+
+                </div>
+
+
+                <div class="grid-item"
+                     onclick="openLightbox('image/花籃H款.JPG')">
+
+                    <img
+                        src="image/花籃H款.JPG"
+                        alt="花籃樣式H">
+
+                    <p>樣式 H</p>
+
+                    <span>
+                        NT$ 6,500 / 對
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- 花禮聯絡 -->
+
+            <div class="contact-box"
+                 style="margin-top:20px;">
+
+
+                <span class="info-label">
+
+                    線上訂購花禮
+
+                </span>
+
+
+                <div style="
+                    font-size:18px;
+                    font-weight:700;
+                ">
+
+                    陳柏元 先生
+
+                </div>
+
+
+                <div class="contact-btns">
+
+
+                    <a href="tel:0938179858"
+                       class="c-btn"
+                       style="
+                           background:var(--gold-dark);
+                       ">
+
+                        撥打電話
+
+                    </a>
+
+
+                    <a href="https://line.me/ti/p/nZJmE8-b6X"
+                       target="_blank"
+                       rel="noopener"
+                       class="c-btn"
+                       style="
+                           background:#4a5d4e;
+                       ">
+
+                        LINE 聯繫
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         交通資訊
+         ★ 只保留兩張圖片
+    ================================================== -->
+
+    <div class="tool-drawer">
+
+
+        <button class="drawer-btn"
+                onclick="toggleDrawer(this,'map_ref')"
+                aria-expanded="false"
+                aria-controls="map_ref">
+
+            <span>
+
+                會場交通資訊
+
+            </span>
+
+
+            <span class="toggle-icon">
+
+                +
+
+            </span>
+
+        </button>
+
+
+        <div id="map_ref"
+             class="drawer-content">
+
+
+            <div class="transport-title">
+
+
+                <div class="info-label">
+
+                    三峽昇華園
+
+                </div>
+
+
+                <div class="info-value">
+
+                    明德廳
+
+                </div>
+
+
+                <div class="info-sub">
+
+                    新北市三峽區溪北里介壽路三段260巷1號
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ========================================
+                 交通圖片 1
+            ========================================= -->
+
+            <div class="transport-images">
+
+
+                <img src="image/IMG_3484.jpeg"
+                     class="transport-image"
+                     onclick="openLightbox(this.src)"
+                     alt="三峽昇華園交通資訊一">
+
+
+                <!-- ====================================
+                     交通圖片 2
+                ==================================== -->
+
+                <img src="image/IMG_0771.png"
+                     class="transport-image"
+                     onclick="openLightbox(this.src)"
+                     alt="三峽昇華園交通資訊二">
+
+                <img src="image/IMG_3473.jpeg"
+                     class="transport-image"
+                     onclick="openLightbox(this.src)"
+                     alt="三峽昇華園交通資訊二">
+
+
+            </div>
+
+
+            <!-- 正確導航 -->
+
+            <a href="https://www.google.com/maps/search/?api=1&query=新北市三峽區溪北里介壽路三段260巷1號"
+               target="_blank"
+               rel="noopener"
+               class="btn-action btn-outline">
+
+                📍 Google Maps 導航
+
+            </a>
+
+
+            <a href="https://www.google.com/maps/dir/?api=1&destination=新北市三峽區溪北里介壽路三段260巷1號"
+               target="_blank"
+               rel="noopener"
+               class="btn-action btn-solid">
+
+                🚗 規劃開車路線
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!-- ======================================================
+     書法致謝
+====================================================== -->
+
+<div class="calligraphy-area"
+     id="thanksSec"
+     aria-label="家眷致謝">
+
+
+    <div class="ink-wrap"
+         aria-hidden="true">
+
+
+        <div class="ink-line"
+             data-text="致 每一位溫暖的您">
+        </div>
+
+
+        <div class="ink-line"
+             data-text="謝謝這段日子的關懷與陪伴">
+        </div>
+
+
+        <div class="ink-line"
+             data-text="每一句問候 每一份情誼">
+        </div>
+
+
+        <div class="ink-line"
+             data-text="都在我們心中 化作最暖的光">
+        </div>
+
+
+        <div class="ink-line"
+             data-text="這份真誠厚情 我們將永誌於心">
+        </div>
+
+
+        <div class="ink-line"
+             data-text="願 每一位親友平安順心">
+        </div>
+
+
+        <div class="ink-line"
+             data-text="全體家眷 叩謝"
+             style="
+                 margin-top:150px;
+                 color:var(--ink);
+                 font-weight:700;
+             ">
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- ======================================================
+     禮儀服務
+====================================================== -->
+
+<div class="contact-box"
+     style="
+        margin:
+            0 24px 80px;
+        width:
+            calc(100% - 48px);
+     ">
+
+
+    <span class="info-label">
+
+        禮儀服務
+
+    </span>
+
+
+    <div style="
+        font-size:19px;
+        font-weight:700;
+    ">
+
+        陳柏元 先生
+
+    </div>
+
+
+    <div class="contact-btns">
+
+
+        <a href="tel:0938179858"
+           class="c-btn"
+           style="
+               background:var(--gold-dark);
+           ">
+
+            撥打電話
+
+        </a>
+
+
+        <a href="https://line.me/ti/p/nZJmE8-b6X"
+           target="_blank"
+           rel="noopener"
+           class="c-btn"
+           style="
+               background:#4a5d4e;
+           ">
+
+            LINE 聯繫
+
+        </a>
+
+
+    </div>
+
+
+</div>
+
+
+<footer>
+
+    祥安生命有限公司
+
+</footer>
+
+
+</main>
+
+</div>
+
+
+<!-- ======================================================
+     浮動快速聯絡
+====================================================== -->
+
+<nav class="float-nav"
+     aria-label="快速聯絡">
+
+
+    <a href="tel:0938179858"
+       aria-label="24小時專線">
+
+        <img src="image/24小時專線.png"
+             alt="24小時專線">
+
+    </a>
+
+
+    <a href="https://line.me/ti/p/nZJmE8-b6X"
+       target="_blank"
+       rel="noopener"
+       aria-label="聯繫LINE">
+
+        <img src="image/聯繫line.PNG"
+             alt="聯繫LINE">
+
+    </a>
+
+
+</nav>
+
+
+<!-- ======================================================
+     Lightbox
+====================================================== -->
+
+<div id="lightbox"
+     role="dialog"
+     aria-modal="true"
+     aria-label="圖片放大檢視">
+
+
+    <span class="lb-close"
+          onclick="closeLightbox()"
+          aria-label="關閉">
+
+        ✕
+
+    </span>
+
+
+    <img id="lbi"
+         alt="放大圖片"
+         onclick="event.stopPropagation()">
+
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   DOM
+========================================================= */
+
+const bgm =
+    document.getElementById('bgm');
+
+const lb =
+    document.getElementById('lightbox');
+
+const lbi =
+    document.getElementById('lbi');
+
+const toast =
+    document.getElementById('toast');
+
+
+/* =========================================================
+   完整資訊
+========================================================= */
+
+const FULL_INFO = `【🍀追思告別】王廖春夫人
+
+🕯️ 出殯日期：民國115年09月25日（五）
+🕰️ 家奠禮：早上07：40
+📍 出殯地點：三峽昇華園
+📝 出殯禮廳：［明德廳］
+
+🏠 牌位安置：三峽昇華園 牌位區
+📝 牌位位置：No.31
+
+🚗 會場地址：新北市三峽區溪北里介壽路三段260巷1號
+
+🌹 敬邀您一同參與追思告別，家眷誠摯感謝
+
+🔗 雲端訃告詳情：${window.location.href}`;
+
+
+/* =========================================================
+   背景音樂
+========================================================= */
+
+let bgmStarted = false;
+
+
+const ICON_PLAY =
+    'https://img.icons8.com/material-outlined/24/777777/musical-notes.png';
+
+
+const ICON_PAUSE =
+    'https://img.icons8.com/material-outlined/24/777777/no-audio.png';
+
+
+function updateBgmIcon(isPlaying) {
+
+    const icon =
+        document.getElementById('bgmIcon');
+
+    const btn =
+        document.getElementById('bgmBtn');
+
+    if (!icon || !btn) return;
+
+    icon.src =
+        isPlaying
+            ? ICON_PLAY
+            : ICON_PAUSE;
+
+    btn.setAttribute(
+        'aria-label',
+        isPlaying
+            ? '暫停背景音樂'
+            : '播放背景音樂'
+    );
+
+}
+
+
+function startBGM() {
+
+    if (bgmStarted) return;
+
+    bgmStarted = true;
+
+    bgm.volume = .4;
+
+    bgm.play()
+        .then(() =>
+            updateBgmIcon(true)
+        )
+        .catch(() => {});
+
+}
+
+
+function toggleBGM() {
+
+    if (!bgmStarted) {
+
+        startBGM();
+
+        return;
+
+    }
+
+
+    if (bgm.paused) {
+
+        bgm.play()
+            .then(() =>
+                updateBgmIcon(true)
+            )
+            .catch(() => {});
+
+    }
+
+    else {
+
+        bgm.pause();
+
+        updateBgmIcon(false);
+
+    }
+
+}
+
+
+/* 使用者第一次互動時啟動 */
+
+document.addEventListener(
+    'click',
+    startBGM,
+    {once:true}
+);
+
+
+document.addEventListener(
+    'touchstart',
+    startBGM,
+    {once:true}
+);
+
+
+bgm.addEventListener(
+    'play',
+    () =>
+        updateBgmIcon(true)
+);
+
+
+bgm.addEventListener(
+    'pause',
+    () =>
+        updateBgmIcon(false)
+);
+
+
+/* =========================================================
+   Scroll Reveal
+========================================================= */
+
+let writingStarted = false;
+
+
+const observer =
+    new IntersectionObserver(
+        entries => {
+
+            entries.forEach(
+                entry => {
+
+                    if (!entry.isIntersecting)
+                        return;
+
+
+                    entry.target
+                        .classList
+                        .add('visible');
+
+
+                    if (
+                        entry.target.id ===
+                        'thanksSec'
+                        &&
+                        !writingStarted
+                    ) {
+
+                        writingStarted = true;
+
+                        startWriting();
+
+                    }
+
+                }
+            );
+
+        },
+        {
+            threshold:.1
+        }
+    );
+
+
+document
+    .querySelectorAll(
+        'section.reveal, .calligraphy-area'
+    )
+    .forEach(
+        el =>
+            observer.observe(el)
+    );
+
+
+/* =========================================================
+   毛筆逐字
+========================================================= */
+
+function startWriting() {
+
+    document
+        .querySelectorAll('.ink-line')
+        .forEach(
+            (line,lineIdx) => {
+
+                const text =
+                    line.getAttribute(
+                        'data-text'
+                    );
+
+                if (!text) return;
+
+                line.innerHTML = '';
+
+
+                [...text]
+                    .forEach(
+                        (char,charIdx) => {
+
+                            const span =
+                                document
+                                .createElement(
+                                    'span'
+                                );
+
+                            span.className =
+                                'ink-char';
+
+                            span.textContent =
+                                char;
+
+                            line.appendChild(
+                                span
+                            );
+
+
+                            setTimeout(
+                                () =>
+                                    span
+                                    .classList
+                                    .add('show'),
+
+                                lineIdx * 1000
+                                +
+                                charIdx * 130
+                            );
+
+                        }
+                    );
+
+            }
+        );
+
+}
+
+
+/* =========================================================
+   Drawer
+========================================================= */
+
+function toggleDrawer(btn,id) {
+
+    const content =
+        document.getElementById(id);
+
+    if (!content) return;
+
+
+    const isOpen =
+        content.classList.contains(
+            'open'
+        );
+
+
+    content.classList.toggle(
+        'open',
+        !isOpen
+    );
+
+
+    btn.classList.toggle(
+        'open',
+        !isOpen
+    );
+
+
+    const icon =
+        btn.querySelector(
+            '.toggle-icon'
+        );
+
+
+    if (icon) {
+
+        icon.textContent =
+            isOpen
+                ? '+'
+                : '−';
+
+    }
+
+
+    btn.setAttribute(
+        'aria-expanded',
+        String(!isOpen)
+    );
+
+}
+
+
+/* =========================================================
+   Lightbox
+========================================================= */
+
+function openLightbox(src) {
+
+    if (!src) return;
+
+    lbi.src = src;
+
+    lb.classList.add('active');
+
+    document.body.style.overflow =
+        'hidden';
+
+}
+
+
+function closeLightbox() {
+
+    lb.classList.remove('active');
+
+    document.body.style.overflow =
+        '';
+
+    setTimeout(
+        () => {
+
+            lbi.src = '';
+
+        },
+        200
+    );
+
+}
+
+
+lb.addEventListener(
+    'click',
+    closeLightbox
+);
+
+
+document.addEventListener(
+    'keydown',
+    e => {
+
+        if (e.key === 'Escape') {
+
+            closeLightbox();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   Toast
+========================================================= */
+
+let toastTimer;
+
+
+function showToast(msg) {
+
+    clearTimeout(toastTimer);
+
+    toast.textContent = msg;
+
+    toast.classList.add('show');
+
+
+    toastTimer =
+        setTimeout(
+            () => {
+
+                toast.classList.remove(
+                    'show'
+                );
+
+            },
+            2800
+        );
+
+}
+
+
+/* =========================================================
+   複製資訊
+========================================================= */
+
+async function copyText() {
+
+    try {
+
+        if (
+            navigator.clipboard &&
+            window.isSecureContext
+        ) {
+
+            await navigator
+                .clipboard
+                .writeText(
+                    FULL_INFO
+                );
+
+        }
+
+        else {
+
+            const textarea =
+                document.createElement(
+                    'textarea'
+                );
+
+            textarea.value =
+                FULL_INFO;
+
+            textarea.style.position =
+                'fixed';
+
+            textarea.style.left =
+                '-9999px';
+
+            document.body.appendChild(
+                textarea
+            );
+
+            textarea.select();
+
+            document.execCommand(
+                'copy'
+            );
+
+            textarea.remove();
+
+        }
+
+
+        showToast(
+            '✅ 追思資訊已複製'
+        );
+
+    }
+
+    catch {
+
+        showToast(
+            '複製失敗，請手動複製'
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   LINE 分享
+========================================================= */
+
+function shareLine() {
+
+    const url =
+        `https://line.me/R/msg/text/?${
+            encodeURIComponent(FULL_INFO)
+        }`;
+
+    window.location.href =
+        url;
+
+}
+
+
+/* =========================================================
+   Google Calendar
+========================================================= */
+
+function addCal() {
+
+    const title =
+        '王文通先生追思告別奠禮';
+
+
+    const dates =
+        '20260913T074000/20260913T082000';
+
+
+    const details =
+        '王文通先生追思告別奠禮\\n' +
+
+        '出殯日期：民國115年09月25日（五）\\n' +
+
+        '家奠禮：07：40\\n' +
+
+        '出殯地點：三峽昇華園［明德廳］\\n' +
+
+        '牌位安置：三峽昇華園 牌位區 No.31\\n' +
+
+        '地址：新北市三峽區溪北里介壽路三段260巷1號';
+
+
+    const location =
+        '新北市三峽區溪北里介壽路三段260巷1號';
+
+
+    const calendarURL =
+        'https://www.google.com/calendar/render' +
+
+        '?action=TEMPLATE' +
+
+        `&text=${encodeURIComponent(title)}` +
+
+        `&dates=${dates}` +
+
+        `&details=${encodeURIComponent(details)}` +
+
+        `&location=${encodeURIComponent(location)}` +
+
+        '&ctz=Asia%2FTaipei';
+
+
+    window.open(
+        calendarURL,
+        '_blank',
+        'noopener'
+    );
+
+}
+
+
+/* =========================================================
+   圖片載入失敗提示
+========================================================= */
+
+document
+    .querySelectorAll('img')
+    .forEach(
+        img => {
+
+            img.addEventListener(
+                'error',
+                () => {
+
+                    img.style.opacity =
+                        '.35';
+
+                }
+            );
+
+        }
+    );
+
+</script>
+
+
+</body>
+</html>
